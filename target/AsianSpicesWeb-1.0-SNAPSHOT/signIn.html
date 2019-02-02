@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landingPage.css" rel="stylesheet">
+     <link href="css/loginPage.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <!------------ Thanks Daniel Almeida for the reference  ----------->
+<!-- https://dribbble.com/shots/4027518-Login-screen-interaction -->
+
+<div class="login-wrapper">
+  <div class="login-left">
+    <img src="img/wood.jpg" alt="Login">
+    <div class="h1">Enter the world of spices</div>
+  </div>
+  <div class="login-right">
+  <form action="LoginServlet" method="POST">
+    <div class="h2">Sign In</div>
+    <div class="form-group">
+      <input type="text" id="full-name" placeholder="Full Name" name="username">
+      <label for="full-name">Full Name</label>    
+    </div>
+    <div class="form-group">
+      <input type="text" id="Email" placeholder="Email">
+      <label for="Email">Email</label>    
+    </div>
+    <div class="form-group">
+      <input type="password" id="Password" placeholder="Password" name="password">
+      <label for="Password">Password</label>    
+    </div>
+    <div class="checkbox-container">
+      <input type="checkbox">
+      <div class="text-checkbox">I agree with the terms of service.</div>
+    </div> 
+    <div class="button-area">
+      <button class="btn btn-secondary" >Login</button>
+<!--	  <input type="submit" name="submit" value="submit">-->
+      <button class="btn btn-primary">Sign Up</button>
+    </div>
+       <a href="index.html" tabindex="5" class="forgot-password" style="#">Continue As Guest User</a>
+    </form>
+  </div>
+</div>
+         <script type="text/javascript">
+     var openLoginRight = document.querySelector('.h1');
+var loginWrapper = document.querySelector('.login-wrapper');
+
+openLoginRight.addEventListener('click', function(){
+  loginWrapper.classList.toggle('open'); 
+});
+      </script>
+  </body>
+
+  
+  
+ 
+</html>
