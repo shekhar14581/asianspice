@@ -32,6 +32,12 @@
     <version>10.12.1.1</version>
     <scope>test</scope>
 </dependency>
+<dependency>
+  <groupId>com.github.jsimone</groupId>
+  <artifactId>webapp-runner</artifactId>
+  <version>8.5.11.3</version>
+  <scope>provided</scope>
+</dependency>
     </dependencies>
 
     <build>
