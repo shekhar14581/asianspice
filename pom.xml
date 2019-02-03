@@ -32,13 +32,7 @@
     <version>10.12.1.1</version>
     <scope>test</scope>
 </dependency>
-<dependency>
-  <groupId>com.github.jsimone</groupId>
-  <artifactId>webapp-runner</artifactId>
-  <version>8.5.11.3</version>
-  <scope>provided</scope>
-</dependency>
-    </dependencies>
+  </dependencies>
 
     <build>
         <plugins>
@@ -83,7 +77,7 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
-            <plugin>
+<!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>2.6</version>
@@ -107,7 +101,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
